@@ -1,0 +1,11 @@
+nomefunc = input("Qual o nome do funcionario? ")
+pesofunc = float(input("Qual o peso do funcionario? ")) 
+aguainger = float(input("Qual a quantidade de aguá ingerida? "))
+aguaideal = (pesofunc *35)/1000
+aguarodondo = round(aguaideal,2)
+aguadia = float( aguarodondo - aguainger )
+print("O funcionario", nomefunc, "de peso" , pesofunc, "ingere ao dia:" , aguainger,"para que chegue ao ideial de agua ingerida deve tomar:" , aguadia)
+if aguadia < 0:
+  print('Parabéns, você atingiu a meta de hidratação diária!')
+elif aguadia > 0:
+  print("Continue focado em se hidratar por hoje, ainda faltam", aguadia, "litros! Você consegue!")
