@@ -9,3 +9,33 @@ if aguadia < 0:
   print('Parabéns, você atingiu a meta de hidratação diária!')
 elif aguadia > 0:
   print("Continue focado em se hidratar por hoje, ainda faltam", aguadia, "litros! Você consegue!")
+
+
+
+
+
+*Professor eu não vi que tinha 2 exercicios eu enviei sem conseguir inserir o outro vou mandar tudo aqui mesmo.*
+
+
+
+
+placaveiculo = input(" informe a placa do veiculo: ")
+valorcomb = float(input("Informe o valor por litro: "))
+quilo60 = float(input("Quantos quilometros foram rodados a 60km por hora? "))
+quilo80 = float(input("Quantos quilometros foram rodados a 80km por hora? "))
+quilo100 = float(input("Quantos quilometros foram rodados a 100km por hora? "))
+quilo120 = float(input("Quantos quilometros foram rodados a 120km por hora? "))
+quilo140 = float(input("Quantos quilometros foram rodados a 140km por hora? "))
+kmtotal = quilo60 + quilo80 + quilo100 + quilo120 + quilo140
+comb60 = quilo60 / 10
+comb80 = quilo80 / 5
+comb100 = quilo100 / 2
+comb120 = quilo120 / 1
+comb140 = quilo140 / 0.5
+combustiveltotal= quilo60 + quilo80 + quilo100 + quilo120 + quilo140
+velocidademedia = (quilo60 + quilo80 + quilo100 + quilo120 + quilo140) / (comb60 + comb80 + comb100 + comb120 + comb140)
+custoviagem = (combustiveltotal * valorcomb)
+print(placaveiculo)
+print("Total de quilômetros rodados:", kmtotal,"km")
+print("Custo estimado da viagem: R$", custoviagem)
+print("Velocidade média ponderada: ",velocidademedia , "km/h")
